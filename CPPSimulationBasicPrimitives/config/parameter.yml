@@ -1,0 +1,16 @@
+data:
+  smooth: true
+  time: 6000
+  gain: 1
+  desired_position:
+    - -0.1
+    - 0.3
+    - 0.2342815
+  initial_pos:
+    - 0.669783
+    - 0.159699
+    - 0.0342815
+  task: push_side_2
+  joint_data_folder: "Exp_2/simulation/push_side/"
+  wrist_data_folder: "Exp_2/simulation/push_side/"
+  

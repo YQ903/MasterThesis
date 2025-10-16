@@ -1,0 +1,6 @@
+/media/panda/data/yaqi/CPPSimulationBasicPrimitives/build/CMakeFiles/inversekinematic.dir
+/media/panda/data/yaqi/CPPSimulationBasicPrimitives/build/CMakeFiles/quadraticprogramming.dir
+/media/panda/data/yaqi/CPPSimulationBasicPrimitives/build/CMakeFiles/maniqphuman.dir
+/media/panda/data/yaqi/CPPSimulationBasicPrimitives/build/CMakeFiles/maniqp.dir
+/media/panda/data/yaqi/CPPSimulationBasicPrimitives/build/CMakeFiles/edit_cache.dir
+/media/panda/data/yaqi/CPPSimulationBasicPrimitives/build/CMakeFiles/rebuild_cache.dir
