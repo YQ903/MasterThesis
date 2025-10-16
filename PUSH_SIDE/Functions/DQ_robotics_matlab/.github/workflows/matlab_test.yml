@@ -1,0 +1,35 @@
+name: MATLAB Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ['MATLAB']
+    strategy:
+      fail-fast: false
+      matrix:
+        testbranches: ['release','master']
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Customize git
+      run: |
+        git submodule update --init --recursive
+        git fetch --prune --unshallow
+    - name: Clone the matlab-tests repository (${{ matrix.testbranches }})
+      run: |
+        git clone -b ${{ matrix.testbranches }} https://github.com/dqrobotics/matlab-tests
+    - name: Clone the matlab-examples repository (${{ matrix.testbranches }})
+      run: |
+        git clone -b ${{ matrix.testbranches }} https://github.com/dqrobotics/matlab-examples
+    - name: Set correct execution path
+      run: |
+        printf "folder=fileparts(which('startup.m'))\n
+        addpath(genpath(folder))" > startup.m
+    - name: Run matlab-tests
+      run: |
+        matlab -nodisplay -nosplash -nodesktop -r "run('run_basic_tests')"
+    - name: Run matlab-examples
+      run: |
+        matlab -nodisplay -nosplash -nodesktop -r "run('run_examples_test')"
