@@ -1,0 +1,1 @@
+python3 py/run_icp.py data/mapping human robot 100 2 --map_dataset trajectory1

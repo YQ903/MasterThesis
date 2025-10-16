@@ -1,0 +1,21 @@
+_build_config = {
+    "BUILD_TENSORFLOW_OPS" : True,
+    "BUILD_PYTORCH_OPS" : True,
+    "BUILD_CUDA_MODULE" : True,
+    "BUILD_AZURE_KINECT" : True,
+    "BUILD_LIBREALSENSE" : True,
+    "BUILD_SHARED_LIBS" : False,
+    "BUILD_GUI" : True,
+    "BUILD_RPC_INTERFACE": True,
+    "ENABLE_HEADLESS_RENDERING" : False,
+    "BUILD_JUPYTER_EXTENSION" : True,
+    "BUNDLE_OPEN3D_ML" : True,
+    "GLIBCXX_USE_CXX11_ABI" : False,
+    "CMAKE_BUILD_TYPE" : "Release",
+    "CUDA_VERSION" : "11.0",
+    "CUDA_GENCODES" : "",
+    "Tensorflow_VERSION" : "2.4.1",
+    "Pytorch_VERSION" : "1.7.1",
+    "WITH_OPENMP" : True,
+    "WITH_FAISS" : True
+}
